@@ -8,8 +8,8 @@ canvas.height = window.innerHeight;
 // Double pendulum parameters
 let originX = canvas.width / 2;
 let originY = canvas.height / 3;
-let length1 = 220, length2 = 100;  // let length1 = 220, length2 = 220;
-let mass1 = 30, mass2 = 50;  // let mass1 = 30, mass2 = 30;
+let length1 = 220, length2 = 220;  // let length1 = 220, length2 = 220;
+let mass1 = 10, mass2 = 30;  // let mass1 = 30, mass2 = 30;
 let angle1 = Math.PI / 2, angle2 = Math.PI / 2;
 let angle1V = 0, angle2V = 0;
 let g = 1.05;
