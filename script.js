@@ -8,13 +8,28 @@ canvas.height = window.innerHeight;
 // Double pendulum parameters
 let originX = canvas.width / 2;
 let originY = canvas.height / 3;
-let length1 = 220, length2 = 220;  // let length1 = 220, length2 = 220;
-let mass1 = 10, mass2 = 30;  // let mass1 = 30, mass2 = 30;
+let length1 = 220, length2 = 220;
+let mass1 = 10, mass2 = 30;
 let angle1 = Math.PI / 2, angle2 = Math.PI / 2;
 let angle1V = 0, angle2V = 0;
 let g = 1.05;
 
 let tracePath = [];
+
+function applyParams() {
+    length1 = parseFloat(document.getElementById('length1').value);
+    length2 = parseFloat(document.getElementById('length2').value);
+    mass1 = parseFloat(document.getElementById('mass1').value);
+    mass2 = parseFloat(document.getElementById('mass2').value);
+    angle1 = parseFloat(document.getElementById('angle1').value) * Math.PI / 180;
+    angle2 = parseFloat(document.getElementById('angle2').value) * Math.PI / 180;
+    g = parseFloat(document.getElementById('gravity').value);
+    angle1V = 0; angle2V = 0;
+    tracePath = [];
+}
+window.onload = function() {
+    applyParams();
+};
 
 // Draw fading path
 function drawTrace() {
