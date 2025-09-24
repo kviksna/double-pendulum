@@ -19,4 +19,9 @@ To preview the double pendulum simulation, follow these simple steps:
 3. **Optional Parameter Customization**:
    - You can customize various parameters for the simulation by editing the `script.js` file. This allows you to tweak the pendulum's initial conditions, colors, and other settings to enhance your experience.
 
+## View on GitHub Pages
+You can view the live double pendulum visualization directly in your browser:
+
+**[View on GitHub Pages](https://kviksna.github.io/double-pendulum/)**
+
 Enjoy exploring the dynamic behavior of the double pendulum!
